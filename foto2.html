@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format FOTO lleugera</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <header class="bg-blue-500 text-white text-center p-5">
+        <a href="./index.html">Torna al inici</a>
+        <h1 class="text-4xl">Image Format FOTO lleugera</h1>
+    </header>
+    <section class="p-6 bg-gray-50 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold text-gray-800 mb-4">FOTO Lleugera</h1>
+        <p class="text-lg text-gray-700 mb-2">
+            <strong class="font-semibold">Format òptim:</strong> 
+            El format <strong>JPEG</strong> és el més adequat per a fotografies de paisatges, ja que ofereix un bon equilibri entre compressió i qualitat visual. En imatges amb molts detalls, com els cels o herba, aquest format manté una qualitat acceptable amb un pes relativament baix.
+        </p>
+        <p class="text-lg text-gray-700">
+            <strong class="font-semibold">Es podria reduir encara més la mida? Perdria qualitat?:</strong> 
+            Sí, es pot reduir ajustant el nivell de compressió, però compressions altes (com en la imatge LOW) poden provocar una pèrdua significativa de detalls, amb artefactes visibles en transicions suaus, com el cel o les ombres. La compressió moderada (MEDIUM) és una opció equilibrada per mantenir la qualitat.
+        </p>
+        <p class="text-lg text-gray-700">
+            <strong class="font-semibold">Format PNG:</strong> 
+            Tot i que el format PNG conserva tots els detalls sense pèrdua de qualitat, no és ideal per a paisatges a causa del seu gran pes, que pot ser innecessari per a fotografies amb gradients complexos.
+        </p>
+        <p class="text-lg text-gray-700">
+            <strong class="font-semibold">Format GIF:</strong> 
+            El format GIF redueix dràsticament la paleta de colors, fent-lo inadequat per a paisatges realistes amb transicions subtils, com cels o herba.
+        </p>
+        
+    </section>
+    <main class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+        <div>
+            <img src="/Foto2/foto2.png" alt="Example 1" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <img src="/Foto2/foto2_low.jpg" alt="Example 1" class="w-full" />
+            <div class="image-info">Qualitat: LOW</div>
+        </div>
+        <div>
+            <img src="/Foto2/foto2-medium.jpg" alt="Example 1" class="w-full" />
+            <div class="image-info">Qualitat: MEDIUM</div>
+        </div>
+        <div>
+            <img src="/Foto2/foto2_high.jpg" alt="Example 1" class="w-full" />
+            <div class="image-info">Qualitat: HIGH</div>
+        </div>
+        <div>
+            <img src="Foto2/ezgif.com-optimize.gif" alt="Example 1" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <br>
+        
+        <div>
+            <h1>Imatge amb WEBP</h1>
+            <img src="Foto2/foto2.webp" alt="Example 1" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <h1>Imatge amb AVIf</h1>
+            <img src="Foto2/foto2.avif" alt="Example 1" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
