@@ -9,37 +9,104 @@
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 
-<body>
-  <header class="bg-blue-500 text-white text-center p-5">
-    <h1 class="text-4xl">Image Format Experiment</h1>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-blue-500 text-white p-5 shadow-lg">
+    <h1 class="text-4xl font-bold text-center">Image Format Experiment</h1>
   </header>
-  <main class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
-    <a href="./Logo.html">
-      <img src="logo/Los_40.png" alt="Logo" class="w-full" />
-      <div class="image-info">Clica aqui</div>
+
+  <!-- Navigation Menu -->
+  <nav class="bg-white shadow-md">
+    <ul class="flex justify-center space-x-4 p-4 text-lg font-semibold">
+      <li><a href="./Logo.html" class="hover:text-blue-500">Logo</a></li>
+      <li><a href="./foto.html" class="hover:text-blue-500">Foto</a></li>
+      <li><a href="./foto2.html" class="hover:text-blue-500">Foto 2</a></li>
+      <li><a href="./Degrad.html" class="hover:text-blue-500">Degradat</a></li>
+      <li><a href="./gif.html" class="hover:text-blue-500">GIF</a></li>
+      <li><a href="./UHD.html" class="hover:text-blue-500">UHD</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <!-- Card 1 -->
+    <!-- Exemple de targeta amb efecte de botó -->
+    <a href="./Logo.html"
+      class="group block bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+      <img src="logo/Los_40.png" alt="Logo"
+        class="w-full h-48 object-cover transition-transform transform group-hover:scale-105" />
+      <div
+        class="p-4 text-center font-medium text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 rounded transition-colors duration-300">
+        Clica aquí: Logo
+      </div>
     </a>
-    <a href="./foto.html">
-      <img src="foto/foto.jpg" alt="Logo" class="w-full" />
-      <div class="image-info">Clica aqui</div>
+
+
+    <!-- Card 2 -->
+    <a href="./foto.html" class="group block bg-white shadow-lg rounded-lg overflow-hidden">
+      <img src="foto/foto.jpg" alt="Foto"
+        class="w-full h-48 object-cover transition-transform transform group-hover:scale-105" />
+      <div
+        class="p-4 text-center font-medium text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 rounded transition-colors duration-300">
+        Clica aquí: Foto</div>
     </a>
-    <a href="./foto2.html">
-      <img src="foto2/foto2.png" alt="Logo" class="w-full" />
-      <div class="image-info">Clica aqui</div>
+
+    <!-- Card 3 -->
+    <a href="./foto2.html" class="group block bg-white shadow-lg rounded-lg overflow-hidden">
+      <img src="foto2/foto2.png" alt="Foto 2"
+        class="w-full h-48 object-cover transition-transform transform group-hover:scale-105" />
+      <div
+        class="p-4 text-center font-medium text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 rounded transition-colors duration-300">
+        Clica aquí: Foto 2</div>
     </a>
+
+    <!-- Card 4 -->
+    <a href="./Degrad.html" class="group block bg-white shadow-lg rounded-lg overflow-hidden">
+      <img src="degrad/angryimg.png" alt="Degradat"
+        class="w-full h-48 object-cover transition-transform transform group-hover:scale-105" />
+      <div
+        class="p-4 text-center font-medium text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 rounded transition-colors duration-300">
+        Clica aquí: Degradat</div>
     </a>
-    <a href="./Degrad.html">
-      <img src="degrad/angryimg.png" Logo" class="w-full" />
-      <div class="image-info">Clica aqui</div>
+
+    <!-- Card 5 -->
+    <a href="./gif.html" class="group block bg-white shadow-lg rounded-lg overflow-hidden">
+      <img src="dejavu/deja-vu.gif" alt="GIF"
+        class="w-full h-48 object-cover transition-transform transform group-hover:scale-105" />
+      <div
+        class="p-4 text-center font-medium text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 rounded transition-colors duration-300">
+        Clica aquí: GIF</div>
     </a>
-    <a href="./gif.html">
-      <img src="dejavu/deja-vu.gif" Logo" class="w-full" />
-      <div class="image-info">Clica aqui</div>
+
+    <!-- Card 6 -->
+    <a href="./UHD.html" class="group block bg-white shadow-lg rounded-lg overflow-hidden">
+      <img src="uhd/pexels-francesco-ungaro-1525041.jpg" alt="UHD"
+        class="w-full h-48 object-cover transition-transform transform group-hover:scale-105" />
+      <div
+        class="p-4 text-center font-medium text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 rounded transition-colors duration-300">
+        Clica aquí: UHD</div>
     </a>
-    <a href="./UHD.html">
-      <img src="uhd/pexels-francesco-ungaro-1525041.jpg" Logo" class="w-full" />
-      <div class="image-info">Clica aqui</div>
+
+    <!-- Card 7 -->
+    <a href="./imatges_per_WebDev.html" class="group block bg-white shadow-lg rounded-lg overflow-hidden">
+      <img src="uhd/pexels-francesco-ungaro-1525041.jpg" alt="UHD"
+        class="w-full h-48 object-cover transition-transform transform group-hover:scale-105" />
+      <div
+        class="p-4 text-center font-medium text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 rounded transition-colors duration-300">
+        Clica aquí: UHD</div>
+    </a>
+    <!-- Card 8 -->
+    <a href="./imatges_per_WebDev.html" class="group block bg-white shadow-lg rounded-lg overflow-hidden">
+      <img src="./images/imatge-mitja.jpg" alt="Tasques d’imatges per WebDev"
+        class="w-full h-48 object-cover transition-transform transform group-hover:scale-105" />
+      <div
+        class="p-4 text-center font-medium text-blue-500 group-hover:text-white bg-transparent group-hover:bg-blue-500 rounded transition-colors duration-300">
+        Clica aquí: Tasques d’imatges per WebDev</div>
     </a>
   </main>
+
+
+
   <script src="scripts/main.js"></script>
 </body>
 

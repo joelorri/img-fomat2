@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>imatges per WebDev</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="/node_modules/lightbox2/dist/css/lightbox.css">
+</head>
+
+<body>
+    <header class="bg-blue-500 text-white text-center p-5">
+        <a href="./index.html" class="hover:underline">Torna al inici</a>
+        <h1 class="text-4xl font-bold mt-2">Imatges per WebDev</h1>
+    </header>
+    <div class="bg-white shadow-lg rounded-lg p-10 mt-10">
+        <h1 class="text-2xl font-semibold mb-4">Pràctica 1: Inserció bàsica d’imatges</h1>
+        <img src="/imatges per WebDev/pexels-alinaskazka-27739576.jpg"
+            alt="Paisatge costaner amb roques i onades al mar" class="w-full max-w-xl rounded-lg shadow-md mb-4">
+        <h2 class="text-lg font-medium">Reflexió:</h2>
+        <p class="mt-2 text-gray-700">
+            Crec que és important, ja que si el nostre buscador no càrrega la imatge ens apareixerà una descripció.
+            També pot ser interessant per a persones amb ceguera, ja que podrà oferir informació precisa sobre aquesta,
+            a més a més de fer que la pàgina sigui adaptable.
+        </p>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-10 mt-10">
+        <h1 class="text-2xl font-semibold mb-4">Pràctica 2: Formats d’imatge i atributs</h1>
+        <div class="flex flex-wrap justify-center mb-4">
+            <img src="/imatges per WebDev/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.webp"
+                alt="Imatge optimitzada amb WebP" class="w-48 h-36 object-cover rounded-lg shadow-md m-2">
+            <img src="/imatges per WebDev/ama-dablam2-most-beautiful-mountains-in-the-world.avif"
+                alt="Imatge optimitzada amb AVIF" class="w-48 h-36 object-cover rounded-lg shadow-md m-2">
+        </div>
+        <h2 class="text-lg font-medium">Reflexió:</h2>
+        <p class="mt-2 text-gray-700">
+            La mida real d'una imatge es refereix a les dimensions originals de la imatge en píxels, mentre que els
+            atributs <code>width</code> i <code>height</code> en HTML permeten especificar dimensions personalitzades
+            per mostrar la imatge a la pàgina web. Això significa que, encara que la imatge tingui una mida real
+            determinada, es pot redimensionar visualment mitjançant aquests atributs sense alterar la seva qualitat
+            original. Si els atributs <code>width</code> i <code>height</code> són diferents de la mida real, la imatge
+            pot aparèixer estirada o comprimida.
+        </p>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-10 mt-10">
+        <h1 class="text-2xl font-semibold mb-4">Pràctica 3: Imatges responsives amb srcset</h1>
+        <div>
+            <img src="../images/imatge-petit.jpg" alt="Imatges"
+                srcset="../images/imatge-mitja.jpg 380w, ../images/imatge-gran.jpg 800w"
+                sizes="(min-width: 600px) 280px, (min-width: 1200px) 480px" />
+                <h2 class="text-lg font-medium">Reflexió:</h2>
+            <p class="mt-2 text-gray-700">
+                L'element <picture> ofereix avantatges significatius per a la direcció d'art en comparació amb srcset.
+                    Mentre que srcset permet seleccionar imatges en funció de la resolució i la mida de la pantalla,
+                    <picture>
+            </p>
+        </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-10 mt-10">
+        <h1 class="text-2xl font-semibold mb-4">Pràctica 4: Direcció d’art amb <picture>
+        </h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/images/imatge-petit.jpg" alt="Imatge optimitzada per mòbils">
+
+            <source media="(min-width: 601px)" srcset="/images/imatge-mitja.jpg" alt="Imatge d'alta resolució">
+
+            <img src="/images/imatge-gran.jpg" alt="Imatge de reserva" />
+        </picture>
+        <h2 class="text-lg font-medium">Reflexió:</h2>
+        <p class="mt-2 text-gray-700">
+            Aquesta pràctica m'ha ajudat a entendre millor com els diferents formats d'imatge poden afectar la
+            qualitat i la velocitat de càrrega de la pàgina web. He après que el format WebP és ideal per a la web
+            degut a la seva compressió eficient.
+        </p>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-10 mt-10">
+        <h1 class="text-2xl font-semibold mb-4">Pràctica 5: Galeria amb efecte Lightbox</h1>
+        <div class="flex flex-row">
+            <a class="example-image-link m-5" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg"
+                data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img
+                    class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg"
+                    alt="" /></a>
+            <a class="example-image-link m-5" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg"
+                data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img
+                    class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg"
+                    alt="" /></a>
+            <a class="example-image-link m-5" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg"
+                data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img
+                    class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg"
+                    alt="" /></a>
+            <a class="example-image-link m-5" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg"
+                data-lightbox="example-set"
+                data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image"
+                    src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
+        </div>
+        <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-10 mt-10">
+        <h1 class="text-2xl font-semibold mb-4">Pràctica 6: Mapa interactiu amb map</h1>
+        <!-- Image Map Generated by http://www.image-map.net/ -->
+        <img src="/imatges per WebDev/Elecio.webp" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="" alt="Image Link 1" title="Click to view image 1"
+                href="/images/imatge-gran.jpg" coords="153,240,230,173"
+                shape="rect">
+            <area target="" alt="Image Link 2" title="Click to view image 2"
+                href="/images/imatge-petit.jpg" coords="348,194,419,125"
+                shape="rect">
+        </map>
+        <h2 class="text-lg font-medium">Reflexió:</h2>
+        <p class="mt-2 text-gray-700">
+            Ho he fet desde image-map.net 
+        </p>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-10 mt-10">
+        <h1 class="text-2xl font-semibold mb-4">Pràctica 7: Lazy Loading</h1>
+        <div>
+            <img src="/images/imatge-petit.jpg" alt="Imatge 1 amb Lazy Loading" loading="lazy">
+            <img src="/images/imatge-gran.jpg" alt="Imatge 2 amb Lazy Loading" loading="lazy">
+            <img src="/images/imatge-mitja.jpg" alt="Imatge 2 amb Lazy Loading" loading="lazy">
+            <img src="/imatges per WebDev/ama-dablam2-most-beautiful-mountains-in-the-world.avif" alt="Imatge 2 amb Lazy Loading" loading="lazy">
+            <img src="/imatges per WebDev/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.webp" alt="Imatge 2 amb Lazy Loading" loading="lazy">
+            <img src="/imatges per WebDev/pexels-alinaskazka-27739576.jpg" alt="Imatge 2 amb Lazy Loading" loading="lazy">
+            <p class="mt-2 text-gray-700">
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
